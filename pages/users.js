@@ -85,7 +85,7 @@ function UsersPage() {
     useEffect(() => {
         console.log("Getting the data")
         getData(currentPage);
-    }, []);
+    }, [currentPage]);
 
 
     return (

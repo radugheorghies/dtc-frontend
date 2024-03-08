@@ -172,7 +172,7 @@ function NuiGenerator() {
 
   useEffect(() => {
     getData(currentPage);
-  }, []);
+  }, [currentPage]);
 
   useEffect(()=>{
     setValues({
@@ -180,16 +180,16 @@ function NuiGenerator() {
       isSubmittingProfile: createProfileLoading,
       errorMessage: createProfileError
     });
-  },[createProfileError, createProfileLoading]);
+  },[createProfileError, createProfileLoading, values]);
 
   useEffect(() => {
     if (user) {
       setValues({
         ...values,
-        ['urlz']: `https://localhost:4500/`+user.shortID,
+        ['urlz']: `http://109.166.217.178:6082/`+user.shortID,
       });
     }
-  }, [user]);
+  }, [user, values]);
 
   return (
     <Page title="Profiles Generator">
