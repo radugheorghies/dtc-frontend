@@ -5,9 +5,9 @@ import '../styles/globals.css';
 const queryClient = new QueryClient();
 
 function App({ Component, pageProps }) {
-  useEffect(() => {
-    import('@preline/overlay');
-  }, []);
+  // useEffect(() => {
+  //   import('@preline/overlay');
+  // }, []);
 
   return (
     <QueryClientProvider client={queryClient}>

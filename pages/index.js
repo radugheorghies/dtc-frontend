@@ -34,7 +34,7 @@ function SignInPage() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </Field>
-          <div class="flex items-center justify-between">
+          <div className="flex items-center justify-between">
             {signInError && (
               <p className="text-red-700">
                 Invalid credentials
@@ -47,7 +47,7 @@ function SignInPage() {
                 Sign In
               </Button>
             )}
-            <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+            <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
               Forgot Password?
             </a>
           </div>
