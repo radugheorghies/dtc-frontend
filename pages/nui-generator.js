@@ -186,7 +186,7 @@ function NuiGenerator() {
     if (user) {
       setValues({
         ...values,
-        ['urlz']: `http://109.166.217.178:6081/`+user.shortID,
+        ['urlz']: `https://109.166.217.178:6081/`+user.shortID,
       });
     }
   }, [user]);
