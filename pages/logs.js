@@ -62,13 +62,13 @@ function Logs() {
                     {item.createdAt}
                   </td>
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
-                      {item.name}
+                      {item.nui}
                   </td>
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
-                      {item.email}
+                      {item.byteMessage}
                   </td>
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
-                      {item.role}
+                      {item.message}
                   </td>
                   </tr>
               ))}
