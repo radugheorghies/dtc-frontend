@@ -180,7 +180,7 @@ function NuiGenerator() {
       isSubmittingProfile: createProfileLoading,
       errorMessage: createProfileError
     });
-  },[createProfileError, createProfileLoading, values]);
+  },[createProfileError, createProfileLoading]);
 
   useEffect(() => {
     if (user) {
@@ -189,7 +189,7 @@ function NuiGenerator() {
         ['urlz']: `http://109.166.217.178:6082/`+user.shortID,
       });
     }
-  }, [user, values]);
+  }, [user]);
 
   return (
     <Page title="Profiles Generator">
