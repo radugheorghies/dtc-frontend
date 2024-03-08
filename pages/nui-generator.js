@@ -127,7 +127,7 @@ function NuiGenerator() {
     });
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (values.nui.length != 10) {
@@ -154,10 +154,10 @@ function NuiGenerator() {
       destAmef: values.destAmef
     };
 
-    const valid = createProfile(postData);
-    // if (valid) {
-    getData(currentPage);
-    // }
+    const valid = await createProfile(postData);
+    if (valid) {
+      getData(currentPage);
+    }
 
     
   };
