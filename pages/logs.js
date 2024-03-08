@@ -32,7 +32,7 @@ function Logs() {
   useEffect(() => {
       console.log("Getting the data")
       getData(currentPage);
-  }, []);
+  }, [currentPage]);
 
   return (
     <Page title="Logs">
