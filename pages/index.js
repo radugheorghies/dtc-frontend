@@ -34,12 +34,12 @@ function SignInPage() {
               onChange={(event) => setPassword(event.target.value)}
             />
           </Field>
-          <div className="flex items-center justify-between">
-            {signInError && (
-              <p className="text-red-700">
+          {signInError && (
+          <p className="text-red-700">
                 Invalid credentials
               </p>
-            )}
+          )}
+          <div className="flex items-center justify-between">
             {signInLoading ? (
               <p>Loading...</p>
             ) : (
