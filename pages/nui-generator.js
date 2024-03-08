@@ -155,9 +155,9 @@ function NuiGenerator() {
     };
 
     const valid = createProfile(postData);
-    if (valid) {
-        getData(currentPage);
-    }
+    // if (valid) {
+    getData(currentPage);
+    // }
 
     
   };
@@ -186,7 +186,7 @@ function NuiGenerator() {
     if (user) {
       setValues({
         ...values,
-        ['urlz']: `http://109.166.217.178:6082/`+user.shortID,
+        ['urlz']: `http://109.166.217.178:9843/`+user.shortID,
       });
     }
   }, [user]);
@@ -266,7 +266,7 @@ function NuiGenerator() {
 
                 {values.errorMessage && (
                   <span className="text-red-600">
-                    {values.errorMessage}
+                    Error creating the profile
                   </span>
                 )}
                 <div className="m-t-50 m-b-20">
