@@ -30,7 +30,7 @@ function Logs() {
   };
 
   const formatDate = (isoDate) => {
-    let isoDateTime = new Date(item.createdAt); 
+    let isoDateTime = new Date(isoDate); 
     let localDateTime = isoDateTime. toLocaleDateString() + " " + isoDateTime. toLocaleTimeString();
     return localDateTime;
   } 
