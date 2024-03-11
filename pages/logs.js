@@ -75,7 +75,7 @@ function Logs() {
               </tbody>
           </table>
 
-          <div className="">
+          <div className="mb-20">
               <ReactPaginate
                   breakLabel="..."
                   onPageChange={event=>handlePageClick(event)}
