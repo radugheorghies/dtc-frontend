@@ -50,7 +50,7 @@ function Logs() {
                   <tr>
                       <th className="font-semibold">Date</th>
                       <th className="font-semibold">NUI</th>
-                      <th className="font-semibold">Bytes</th>
+                      {/* <th className="font-semibold">Bytes</th> */}
                       <th className="font-semibold">Text</th>
                   </tr>
               </thead>
@@ -64,9 +64,9 @@ function Logs() {
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
                       {item.nui}
                   </td>
-                  <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
+                  {/* <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
                       {item.byteMessage}
-                  </td>
+                  </td> */}
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
                       {item.message}
                   </td>
