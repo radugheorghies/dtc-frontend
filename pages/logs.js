@@ -29,6 +29,12 @@ function Logs() {
     setCurrentPage(page);
   };
 
+  const formatDate = (isoDate) => {
+    let isoDateTime = new Date(item.createdAt); 
+    let localDateTime = isoDateTime. toLocaleDateString() + " " + isoDateTime. toLocaleTimeString();
+    return localDateTime;
+  } 
+
   useEffect(() => {
       console.log("Getting the data")
       getData(currentPage);
@@ -59,7 +65,7 @@ function Logs() {
               {logs?.map((item, i) => (
                   <tr key={i} className={`text-left align-top origin-top`}>
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
-                    {item.createdAt}
+                    {formatDate(item.createdAt)}
                   </td>
                   <td className="align-top text-sm border-t-[1px] border-gray-200 pt-3 h-8">
                       {item.nui}
